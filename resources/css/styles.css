@@ -1,0 +1,150 @@
+/* universal */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: ;
+
+}
+
+
+/* header */
+
+#banneroverlay {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  color: #FBB13C;
+  text-align: center;
+}
+
+#banner {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url('../images/boxingperson4.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+#banneroverlay h1 {
+  padding-top: 30vh;
+  margin: 0 auto;
+  font-size: 7.5vw;
+  font-family: 'Staatliches', sans-serif;
+}
+
+#banneroverlay h2 {
+  margin: 0 auto;
+  font-size: 2.4vw;
+  font-family: 'Vampiro One', serif;
+  font-weight: lighter;
+}
+
+/* main */
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(20, 1fr) / repeat(20, 1fr);
+  height: 50vw;
+  overflow: hidden;
+}
+
+.colorblock {
+  background-color: #A599B5;
+  grid-area: 1 / 1 / 33 / 11;
+  height: 50vw;
+}
+
+.main h2 {
+  font-size: 2.5vw;
+  line-height: 2;
+  font-family: 'Vampiro One', serif;
+  margin-bottom: 0rem;
+  grid-area: 6 / 1/ span 3 / 11;
+  justify-self: center;
+}
+
+.container1 {
+  width: 100%;
+}
+
+.text {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  grid-area: 9 / 1 / 18 / 11;
+  text-align: center;
+  justify-self: center;
+}
+
+.text p {
+  width: 100%;
+  font-size: 1.8vw;
+  font-family: 'Antic Slab', serif;
+  font-weight: initial;
+}
+
+.image-container {
+  grid-area: 1 / 11 / 21 / 21;
+  height: 50vw;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+
+.container2 {
+
+}
+
+@media only screen and (max-width: 600px) {
+  #banneroverlay h1 {
+    font-size: 15vw;
+  }
+  #banneroverlay h2 {
+    font-size: 5vw;
+  }
+  .main {
+    grid-template: repeat(2, 100vw) / 100vw;
+  }
+  .main h2 {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+  .text {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+  .colorblock {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    height: 100vw;
+    width: 100vw;
+  }
+  .image-container {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    height: 100vw;
+    width: 100vw;
+  }
+  .image-container img {
+    height: 100vw;
+    width: 100vw;
+  }
+}
