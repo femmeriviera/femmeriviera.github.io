@@ -108,12 +108,12 @@ a {
 .images {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 98%;
   margin: 0 auto;
 }
 
 .images img {
-  max-height: 200px;
+  max-height: 250px;
 }
 
 .image-container {
@@ -328,5 +328,32 @@ footer h6 {
   #portfolio h2,
   #team h2 {
     font-size: 4em;
+  }
+}
+
+
+@media only screen and (min-width: 2000px) {
+  .images {
+    width: 90%;
+  }
+
+  .images img {
+    max-height: 300px;
+  }
+
+  .people {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  .images img {
+    max-height: 350px; ;
+  }
+}
+
+@media only screen and (min-width: 2800px) {
+  .images img {
+    max-height: 400px;
   }
 }
