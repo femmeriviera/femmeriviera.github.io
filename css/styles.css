@@ -386,7 +386,7 @@ footer h6 {
   }
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 1500px) {
   .site-hero {
     height: 600px;
   }
